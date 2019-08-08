@@ -2,6 +2,14 @@
 
 A small package to make sending notifications easy on macOS.
 
+## Installation
+
+```sh
+pip install simple-notifications
+```
+
+For installation from source, see below.
+
 # System Requirement
 
 Supports OS X 10.10 (Yosemite) to macOS 10.14 (Mojave).
@@ -40,3 +48,14 @@ notify("Your task is done!")
 ```
 
 Note that this also changes the notification icon. WARNING: You have to do this BEFORE sending out a notification!
+
+# Installation From Source
+
+```sh
+git clone https://github.com/pkqxdd/simple-notifications/
+cd simple-notifications/simple_notifications
+cmake .
+make
+cd ..
+python setup.py install
+```
