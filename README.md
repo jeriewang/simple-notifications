@@ -34,7 +34,7 @@ Apple requires all programs that sends a notification to have a valid bundle ide
 By default, the injected bundle identifier is `org.python.PythonLauncher`. If you have never installed a distribution from the python.org installer, you may not have the `Python.app` software. This may result in your notification not showing up. To solve this, you can change bundle identifier to a package which you know for sure is installed. For example,
 
 ```py
- from simple_notifications import notify, inject_bundle_identifier
+from simple_notifications import notify, inject_bundle_identifier
 inject_bundle_identifier("com.apple.Terminal")
 notify("Your task is done!")
 ```

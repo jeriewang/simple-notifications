@@ -19,7 +19,7 @@ setup(
 	    'simple_notifications':["*.md","*.so"]
 	},
 	zip_safe=False,
-	version='0.1.0',
+	version='0.1.1',
 
 	python_requires=">=2.7,>=3.5,<=3.7",
 
@@ -30,5 +30,8 @@ setup(
 	author_email="yrrejkk@gmail.com",
 	keywords="macOS notification notifications nc",
 	include_package_data=True,
+	project_urls={
+	"GitHub":"https://github.com/pkqxdd/simple-notifications",
+	},
 	license="MIT"
 )

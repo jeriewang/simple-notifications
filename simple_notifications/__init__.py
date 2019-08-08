@@ -3,11 +3,11 @@ import Foundation
 import uuid
 
 try:
-    from .injectionSupport import injectBundleIdentifier
+    from .injectionSupport import injectBundleIdentifier as inject_bundle_identifier
 except ImportError:
-    from injectionSupport import injectBundleIdentifier
+    from injectionSupport import injectBundleIdentifier as inject_bundle_identifier
 
-injectBundleIdentifier("org.python.PythonLauncher")
+inject_bundle_identifier("org.python.PythonLauncher")
 
 
 class Notification(object):
@@ -94,4 +94,4 @@ def notify(title, subtitle=None, informative_text=None, sound=None):
     notification.send()
     return notification
 
-__all__=["notify","injectBundleIdentifier","Notification"]
+__all__=["notify","inject_bundle_identifier","Notification"]
